@@ -1,80 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Daniel Chávez — Portafolio</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <nav>
-    <div class="nav-inner">
-      <a class="nav-brand" href="#inicio">Daniel Chávez</a>
-      <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav>
 
-  <header id="inicio">
-    <div class="wrap">
-      <div class="avatar">DC</div>
-      <h1>Daniel Chávez</h1>
-      <p class="role">Desarrollador Web · Estudiante universitario</p>
+  <div class="nav-inner">
+
+    <a class="nav-brand" href="#inicio">
+      Daniel Chávez
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+  </div>
+
+</nav>
+
+
+<header id="inicio">
+
+  <div class="wrap">
+
+    <div class="avatar">
+      DC
     </div>
-  </header>
 
-  <section id="sobre-mi">
-    <div class="wrap">
-      <h2>Sobre mí</h2>
-      <p>Soy estudiante universitario de Desarrollo de Portales Web. Este portafolio reúne los proyectos que he desarrollado a lo largo del curso, construidos con HTML, CSS y JavaScript.</p>
-      <p>Me interesa crear páginas claras y fáciles de usar, cuidando tanto el diseño como el funcionamiento detrás de cada sitio.</p>
+    <h1>
+      Daniel Chávez
+    </h1>
+
+    <p class="role">
+      Desarrollador Web · Estudiante universitario
+    </p>
+
+  </div>
+
+</header>
+
+
+
+<section id="sobre-mi">
+
+  <div class="wrap">
+
+    <h2>
+      Sobre mí
+    </h2>
+
+
+    <p>
+      Soy estudiante universitario de Ingeniería en Sistemas.
+      Este portafolio reúne los proyectos desarrollados durante el curso
+      de Desarrollo Web, utilizando tecnologías como HTML, CSS y JavaScript.
+    </p>
+
+
+    <p>
+      Me interesa crear soluciones digitales funcionales, combinando un diseño
+      limpio con una buena experiencia de usuario y buenas prácticas de desarrollo.
+    </p>
+
+
+  </div>
+
+</section>
+
+
+
+
+<section id="proyectos">
+
+  <div class="wrap">
+
+    <h2>
+      Proyectos
+    </h2>
+
+
+
+    <div class="project">
+
+      <h3>
+        Perfil de Portafolio
+      </h3>
+
+      <p>
+        Página web personal desarrollada para presentar información profesional,
+        habilidades, proyectos realizados y medios de contacto.
+      </p>
+
     </div>
-  </section>
 
-  <section id="proyectos">
-    <div class="wrap">
-      <h2>Proyectos</h2>
-      <div class="project">
-        <h3>Perfil de Portafolio</h3>
-        <p>Página de presentación personal con foto de perfil, biografía y contacto.</p>
-        <div class="links"><a href="#" onclick="return false;">Ver repositorio</a> · <a href="#" onclick="return false;">Ver en GitHub Pages</a></div>
-      </div>
-      <div class="project">
-        <h3>Proyecto 2 (por agregar)</h3>
-        <p>Espacio reservado para el siguiente trabajo del curso.</p>
-        <div class="links"><a href="#" onclick="return false;">Ver repositorio</a> · <a href="#" onclick="return false;">Ver en GitHub Pages</a></div>
-      </div>
+
+
+
+    <div class="project">
+
+      <h3>
+        Speed Net
+      </h3>
+
+      <p>
+        Proyecto web desarrollado durante la clase para una empresa ficticia de
+        servicios de internet. Se implementó utilizando HTML, CSS y JavaScript,
+        aplicando estructura web, diseño visual y elementos interactivos.
+      </p>
+
     </div>
-  </section>
 
-  <section id="contacto">
-    <div class="wrap">
-      <h2>Contacto</h2>
-      <div class="contact-item"><span>Email</span><a href="mailto:dana_chavezc55@unicah.edu">dana_chavezc55@unicah.edu</a></div>
-      <div class="contact-item"><span>GitHub</span><a href="https://github.com/danachavezc55-max" target="_blank" rel="noopener">github.com/danachavezc55-max</a></div>
-      <div class="contact-item"><span>LinkedIn</span><a href="#" onclick="return false;">linkedin.com/in/daniel-chavez</a></div>
+
+
+  </div>
+
+</section>
+
+
+
+
+
+<section id="contacto">
+
+  <div class="wrap">
+
+    <h2>
+      Contacto
+    </h2>
+
+
+    <div class="contact-item">
+
+      <span>
+        Email
+      </span>
+
+      <a href="mailto:dana_chavezc55@unicah.edu">
+        dana_chavezc55@unicah.edu
+      </a>
+
     </div>
-  </section>
 
-  <footer>© 2026 Daniel Chávez · Desarrollo de Portales Web II</footer>
 
-  <script src="script.js"></script>
+
+    <div class="contact-item">
+
+      <span>
+        GitHub
+      </span>
+
+      <a href="https://github.com/danachavezc55-max" target="_blank" rel="noopener">
+        github.com/danachavezc55-max
+      </a>
+
+    </div>
+
+
+
+    <div class="contact-item">
+
+      <span>
+        LinkedIn
+      </span>
+
+      <a href="#" onclick="return false;">
+        linkedin.com/in/daniel-chavez
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 Daniel Chávez · Desarrollo de Portales Web II
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
