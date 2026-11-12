@@ -1,4 +1,4 @@
-# Portafolio – Dana Chávez
+# Portafolio – Daniel Chávez
 
 Portafolio multi-página construido con **Vite** (web bundler), **LESS**, **Handlebars**,
 CSS **minificado** y **purgado** (PurgeCSS) a solo las reglas utilizadas.
