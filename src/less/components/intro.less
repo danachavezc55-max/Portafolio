@@ -1,0 +1,33 @@
+.intro {
+    background-color: @primary-bg-color;
+    color: @primary-text-color;
+    padding: 4rem 1rem;
+    text-align: center;
+    .intro-content {
+        max-width: 640px;
+        p {
+            margin: 0 0 1.5rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            @media (min-width: @breaks[tablet]) {
+                font-size: 3.5rem;
+            }
+        }
+        .intro-kicker {
+            margin-bottom: 0.25rem;
+            color: @alternate-bg-color;
+        }
+        .intro-role {
+            font-size: 1.25rem;
+            color: @alternate-bg-color;
+        }
+        .flex {
+            justify-content: center;
+        }
+        .secondary-btn {
+            color: @primary-text-color;
+        }
+    }
+}

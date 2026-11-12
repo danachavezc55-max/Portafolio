@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Proyectos | {{titulo}}</title>
+    <link rel="stylesheet" href="src/less/style.less" />
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+    {{>Header}}
+
+    <main>
+        <section class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="project-grid">
+                {{#each proyectos}}
+                    {{>ProjectCard}}
+                {{/each}}
+            </div>
+        </section>
+    </main>
+
+    {{>Footer}}
+</body>
+</html>

@@ -1,0 +1,29 @@
+.contact-list {
+    padding-left: 1.25rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 560px;
+    label {
+        font-weight: bold;
+    }
+    input,
+    textarea {
+        padding: 0.65rem;
+        font: inherit;
+        border: 1px solid @alternate-bg-color;
+        border-radius: 8px;
+        background-color: @surface-color;
+        &:focus {
+            outline: 2px solid @primary-bg-color;
+        }
+    }
+    .primary-btn {
+        align-self: flex-start;
+        margin-top: 0.75rem;
+        font: inherit;
+    }
+}

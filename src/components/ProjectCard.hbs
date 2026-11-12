@@ -1,0 +1,18 @@
+<article class="project-card">
+    <div class="project-card-media">
+        <img src="{{img}}" alt="{{img_alt}}" loading="lazy" />
+    </div>
+    <div class="project-card-body">
+        <span class="badge">{{categoria}}</span>
+        <h3>{{nombre}}</h3>
+        <p>{{descripcion}}</p>
+        <ul class="tags">
+            {{#each tecnologias}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="project-card-footer">
+        <a href="{{repo}}" target="_blank" rel="noopener">Ver repositorio</a>
+    </div>
+</article>

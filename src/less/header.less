@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: @primary-bg-color;
+    color: @primary-text-color;
+    padding: 0.75rem 1rem;
+    .brand-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            a {
+                color: @primary-text-color;
+                text-decoration: none;
+            }
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+            li {
+                a {
+                    display: block;
+                    color: @primary-text-color;
+                    text-decoration: none;
+                    padding: 0.75rem 1rem;
+                    transition: background-color 0.7s ease;
+                    &:hover,
+                    &[aria-current="page"] {
+                        background-color: @alternate-bg-color;
+                    }
+                }
+            }
+        }
+    }
+}

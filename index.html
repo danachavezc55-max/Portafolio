@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de {{titulo}}, {{rol}}." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{{titulo}} | Portafolio</title>
+    <link rel="stylesheet" href="src/less/style.less" />
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+    {{>Header}}
+
+    <main>
+        <section class="intro full-center">
+            <div class="intro-content">
+                <p class="intro-kicker">Hola, soy</p>
+                <h2>{{titulo}}</h2>
+                <p class="intro-role">{{rol}}</p>
+                <p>{{resumen}}</p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="proyectos.html" class="primary-btn">Ver proyectos</a>
+                    <a href="contacto.html" class="secondary-btn">Contáctame</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            {{#each sobre_mi}}
+            <p>{{this}}</p>
+            {{/each}}
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills">
+                {{#each habilidades}}
+                <div class="skill-group">
+                    <h3>{{grupo}}</h3>
+                    <ul class="tags">
+                        {{#each items}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Proyectos destacados</h2>
+            <div class="project-grid">
+                {{#each destacados}}
+                    {{>ProjectCard}}
+                {{/each}}
+            </div>
+        </section>
+    </main>
+
+    {{>Footer}}
+</body>
+</html>
